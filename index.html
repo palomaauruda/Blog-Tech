@@ -4,7 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Conexão Empática</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonte bonita do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos da página diretamente aqui -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f0f4f8;
+            color: #2d3748;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Topo do Blog */
+        header {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #2d3748;
+            text-align: center;
+            padding: 50px 20px 70px 20px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #4a5568;
+        }
+
+        /* Conteúdo do Post */
+        .container {
+            max-width: 700px;
+            width: 90%;
+            margin: -40px auto 40px auto;
+            flex: 1;
+        }
+
+        .post {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid #edf2f7;
+        }
+
+        .tag {
+            background-color: #e2e8f0;
+            color: #4a5568;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .post h2 {
+            color: #2b6cb0;
+            font-size: 1.7rem;
+            margin-bottom: 6px;
+        }
+
+        .data {
+            color: #a0aec0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .post-img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .post p {
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+            color: #4a5568;
+        }
+
+        /* Botão */
+        .interacao {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px solid #edf2f7;
+            text-align: right;
+        }
+
+        .btn-curtir {
+            background: #fed6e3;
+            color: #2d3748;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .btn-curtir:hover {
+            background: #fbc2eb;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #718096;
+            font-size: 0.85rem;
+            border-top: 1px solid #edf2f7;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,8 +157,7 @@
             <h2>O que realmente significa ter empatia?</h2>
             <p class="data">Postado em 2 de Julho de 2026</p>
             
-            <!-- Imagem ilustrativa usando um serviço de imagens gratuitas -->
-            <img class="post-img" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80" alt="Duas pessoas se abraçando em tom acolhedor">
+            <img class="post-img" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=800&q=80" alt="Pessoas se abraçando">
 
             <p>Empatia vai muito além de apenas "se colocar no lugar do outro". Significa olhar para o mundo com os olhos de outra pessoa, sem julgar. É sobre validar os sentimentos de alguém, mesmo quando não passamos pela mesma situação.</p>
             
